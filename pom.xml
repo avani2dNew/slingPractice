@@ -58,6 +58,11 @@
             <artifactId>gson</artifactId>
             <version>1.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.0.6</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -94,8 +99,8 @@
                         <Private-Package>com.ttn.blog</Private-Package>
                         <Bundle-Activator>com.ttn.blog.BlogActivator</Bundle-Activator>
                         <Import-Package>org.osgi.framework,*;resolution:=optional</Import-Package>
-                        <Export-Package>com.ttn.blog;version=1.0.0</Export-Package>
-
+                        <Export-Package>com.ttn.;version=1.0.0</Export-Package>
+                        <Export-Package>com.itextpdf.text.*;com.ttn.blog.*;version=1.0.0</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>
